@@ -14,16 +14,62 @@ div.headerfirst-row {
   display: block;
 }
 
+@media (max-width: 935px) {
+  div.headerfirst-row {
+    background-color: #131313;
+    display: none;
+  }
+}
+
 ul.autor-time > li {
   display: inline-block;
   padding-left: 0;
   color: black;
 }
 
+ul.group-price {
+  padding-left: 0;
+}
+
+ul.group-price > li {
+  display: inline-block;
+}
+
+.fifth-grouplink > ul li {
+  border-bottom: 1px solid #f4f6f6;
+}
+
+ul.article-details {
+  position: absolute;
+  bottom: 0;
+}
+
+p.date-leftarticle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+ul.article-details > li {
+  display: inline-block;
+  color: white;
+}
+
+ul.article-details > li a {
+  color: white;
+  text-decoration: none;
+}
+
 div.headerfirst-row > nav > ul > li,
 nav.wrapperleft-link,
 nav.wrapperright-link {
   display: inline-block;
+}
+
+.fifth-grouplink > ul li a {
+  color: #aaa;
+  text-decoration: none;
 }
 
 div.headerfirst-row nav ul > li > a {
@@ -52,8 +98,17 @@ footer div.group-link div ul > li > a {
   text-decoration: none;
 }
 
+.fifth-grouplink > ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 div.headerfirst-row nav ul > li > a:hover {
   color: white;
+}
+
+.fifth-grouplink > ul {
+  color: #f42;
 }
 
 footer div.group-link div > ul {
@@ -86,6 +141,16 @@ div.headersecond-row nav ul > li {
   display: inline-block;
 }
 
+@media (max-width: 935px) {
+  div.headersecond-row nav ul > li {
+    display: none;
+  }
+
+  div.headersecond-row nav ul > li:nth-child(1) {
+    display: inline-block;
+  }
+}
+
 div.headersecond-row {
   display: block;
   height: 3em;
@@ -114,22 +179,7 @@ div.header-lastrow > span {
 }
 
 @media (max-width: 935px) {
-  nav.wrapperleft-link > ul {
-    display: none;
-  }
-
-  nav.wrapperright-link > ul {
-    display: none;
-  }
-
-  div.headersecond-row > div > p,
-  div.headersecond-row > nav > ul > li:nth-child(2),
-  div.headersecond-row > nav > ul > li:nth-child(3),
-  div.headersecond-row > nav > ul > li:nth-child(4),
-  div.headersecond-row > nav > ul > li:nth-child(5),
-  div.headersecond-row > nav > ul > li:nth-child(6),
-  div.headersecond-row > nav > ul > li:nth-child(7),
-  div.headersecond-row > nav > ul > li:nth-child(8) {
+  .display-mdelt {
     display: none;
   }
 }
@@ -142,11 +192,11 @@ div.header-lastrow > span {
 
   div.headersecond-row > nav > ul {
     margin-bottom: 0;
-    margin-top: 0.5em;
+    margin-top: 0;
   }
 
   div.headersecond-row > nav > ul > li > a > img {
-    width: 45%;
+    width: 41%;
     height: 65%;
   }
 }
@@ -191,18 +241,6 @@ div.cover-image {
   margin-top: 0.1em;
 }
 
-@media (max-width: 600px) {
-  .wrappersubgrid > div > div:nth-child(1) {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Sprint_image.jpg");
-    background-size: cover;
-    height: 11.5em;
-    width: 96%;
-    margin-left: 0.5em;
-    margin-bottom: 0.3em;
-    margin-top: 0.1em;
-  }
-}
-
 .wrappersubgrid > div > div:nth-child(2) {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-17-796x417.jpg");
   background-size: cover;
@@ -224,98 +262,6 @@ div.cover-image {
     margin-top: 0.1em;
   }
 }
-
-/*
-.link-white {
-    color: white;
-} */
-
-/* .presentation {
-    color: white;
-}
-
-.firstpresetation-bloc {
-    display: inline-block;
-    position: relative;
-} */
-
-/* .firstpresetation-bloc > h1 {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-} */
-
-/*
-.firstpresetation-bloc > p {
-    padding-top: 1em;
-    position: absolute;
-    bottom: 0;
-    margin-left: 1.2em;
-}
-
-.firstpresetation-bloc > h1 {
-    margin-left: 0.7em;
-} */
-
-/* .secondpresetation-bloc {
-    display: inline-block;
-} */
-
-/* .secondpresetation-bloc > article:nth-child(1) {
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Sprint_image.jpg");
-    background-size: cover;
-    height: 11.5em;
-    width: 150%;
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
-    position: relative;
-    margin-top: 0.1em;
-} */
-
-/* .secondpresetation-bloc article:nth-child(1) > h1 {
-    margin-top: 0.1em;
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 0;
-    margin-left: 0.7em;
-} */
-
-/* .secondpresetation-bloc > article:nth-child(2) {
-    margin-top: 0.1em;
-    margin-bottom: 0;
-    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/1-17-796x417.jpg");
-} */
-
-/* .secondpresetation-bloc > article:nth-child(2) > ul li {
-    display: inline-block;
-} */
-
-/* .secondpresetation-bloc > article:nth-child(2) {
-    margin-left: 0.5em;
-    height: 11em;
-    width: 150%;
-    position: relative;
-    /* background-image: linear-gradient(to top, black, transparent);
-} */
-
-/* .secondpresetation-bloc > article:nth-child(1) {
-    position: relative;
-}
-
-.secondpresetation-bloc > article:nth-child(1):h1 {
-    position: absolute;
-} */
-
-/* .secondpresetation-bloc > article:nth-child(2), .secondpresetation-bloc > article:nth-child(2)::before{
-    background-image: linear-gradient(to top, black, transparent);
-}
-
- .cover-trigger {
-    background-color: rgba(0,0,0,.25) url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png") no-repeat;
-}  */
-
-/* another part */
 
 .first-content {
   grid-area: first-content;
@@ -372,6 +318,8 @@ div.cover-image {
 
 .sixth-content {
   grid-area: sixth-content;
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 .seventh-content {
@@ -414,6 +362,34 @@ div.cover-image {
     grid-template-columns: 2fr 2fr;
     grid-template-areas: "wrappersubgrid-leftarticle wrappersubgrid-firstrightarticle" "wrappersubgrid-leftarticle wrappersubgrid-secondrightarticle";
   }
+}
+
+.wrappersubgrid-leftarticle {
+  position: relative;
+}
+
+.wrappersubgrid-leftarticle > h2 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 45px;
+}
+
+.wrappersubgrid div > div.wrappersubgrid-firstrightarticle > h2 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrappersubgrid div > div.wrappersubgrid-firstrightarticle,
+.wrappersubgrid div > div.wrappersubgrid-secondrightarticle {
+  position: relative;
+}
+
+.wrappersubgrid div > div.wrappersubgrid-secondrightarticle > h2 {
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 
 .wrappersubgrid-one {
@@ -483,10 +459,6 @@ div.cover-image {
 
   .fourth-content {
     position: relative;
-
-    /* grid-area: second-content;
-    margin-left: 10em;
-    margin-right: 10em; */
   }
 }
 
@@ -560,7 +532,6 @@ div.cover-image {
 }
 
 .wrappersubgrid-seven {
-  margin-top: 5em;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr;
@@ -569,7 +540,6 @@ div.cover-image {
 
 @media (min-width: 796px) {
   .wrappersubgrid-seven {
-    margin-top: 5em;
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -643,31 +613,17 @@ p.copyright {
 }
 
 @media (min-width: 768px) {
-  .textdescription-group > h2 {
+  .textdescription {
     font-size: 28px;
   }
 }
 
-.second-content .wrappersubgrid-two > .first-case > img,
-.second-content .wrappersubgrid-two > .second-case > img,
-.second-content .wrappersubgrid-two > .third-case > img,
-.second-content .wrappersubgrid-two > .fourth-case > img,
-.second-content .wrappersubgrid-two > .fifth-case > img,
-.second-content .wrappersubgrid-two > .sixth-case > img,
-.second-content .wrappersubgrid-two > .seventh-case > img,
-.second-content .wrappersubgrid-two > .eighth-case > img {
+.secondcontent-img {
   height: 160px;
   width: 96%;
 }
 
-.second-content .wrappersubgrid-two > .first-case > h3,
-.second-content .wrappersubgrid-two > .second-case > h3,
-.second-content .wrappersubgrid-two > .third-case > h3,
-.second-content .wrappersubgrid-two > .fouth-case > h3,
-.second-content .wrappersubgrid-two > .fifth-case > h3,
-.second-content .wrappersubgrid-two > .sixth-case > h3,
-.second-content .wrappersubgrid-two > .seventh-case > h3,
-.second-content .wrappersubgrid-two > .eighth-case > h3 {
+.secondcontent-subtitle {
   text-align: initial;
 }
 
@@ -706,21 +662,26 @@ div.third-content div.wrappersubgrid-three > div.links ul {
   text-decoration: none;
 }
 
-.fifth-content .wrappersubgrid-five > .first-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .second-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .third-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .fourth-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .fifth-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .sixth-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .seventh-case > h2 > a,
-.fifth-content .wrappersubgrid-five > .eighth-case > h2 > a {
+.fifthlinktitle-style {
   text-decoration: none;
   color: red;
+}
+
+.sixth-content .wrappersubgrid-six div.second-case > a {
+  text-decoration: none;
+  color: red;
+  float: right;
+  margin-right: 1em;
 }
 
 .fourth-content .wrappersubgrid-four .first-case > ul > li > a {
   text-decoration: none;
   color: #555;
+}
+
+.second-content .wrappersubgrid-one div.textdescription-group > h2 > a {
+  text-decoration: none;
+  color: #f42;
 }
 
 div.third-content div.wrappersubgrid-three > div.links ul > li > a {
@@ -735,15 +696,9 @@ div.third-content div.wrappersubgrid-three > div.links ul li a.middle-link {
   padding-right: 0.5em;
 }
 
-.seventh-content .wrappersubgrid-seven article.first-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.second-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.third-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.fourth-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.fifth-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.sixth-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.seventh-case > ul > li:nth-child(1),
-.seventh-content .wrappersubgrid-seven article.eighth-case > ul > li:nth-child(1) {
+.price-replaced {
   text-decoration: line-through;
+  color: #aaa;
 }
 
 div.third-content div.wrappersubgrid-three > div.links ul li:nth-child(1),
@@ -772,6 +727,16 @@ div.third-content div.wrappersubgrid-three > div.links ul li:nth-child(3) {
 div.third-content .wrappersubgrid-three div.links ul > li > a:hover {
   text-decoration: none;
   color: black;
+}
+
+div.third-content .wrappersubgrid-three div.links {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.vertical-alignmentcenter {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (min-width: 1200px) {
@@ -837,6 +802,10 @@ div.third-content .wrappersubgrid-three div.links ul > li > a:hover {
   top: 27px;
 }
 
+.fifth-content * > * > div > div.first-block > h2 {
+  margin-top: 0;
+}
+
 .fourth-content .wrappersubgrid-four > .first-case > a > h2 {
   background: #f42;
   color: #fff;
@@ -849,24 +818,24 @@ div.third-content .wrappersubgrid-three div.links ul > li > a:hover {
   margin-bottom: 0;
 }
 
-.fifth-content .wrappersubgrid-five > .first-case > div,
-.fifth-content .wrappersubgrid-five > .second-case > div,
-.fifth-content .wrappersubgrid-five > .third-case > div,
-.fifth-content .wrappersubgrid-five > .fourth-case > div,
-.fifth-content .wrappersubgrid-five > .fifth-case > div,
-.fifth-content .wrappersubgrid-five > .sixth-case > div,
-.fifth-content .wrappersubgrid-five > .seventh-case > div,
-.fifth-content .wrappersubgrid-five > .eighth-case > div {
-  display: inline-block;
-  background-color: rgba(255, 68.34, 0.06);
-}
-
 .fourth-content .wrappersubgrid-four > .first-case > a > div {
   padding: 10.6666666667px 16px 10.6666666667px 84px;
   color: #000;
   background: rgba(255, 68, 34, 0.08);
   padding-bottom: 0;
   padding-top: 0;
+}
+
+.fifth-content .wrappersubgrid-five > .first-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .second-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .third-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .fourth-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .fifth-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .sixth-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .seventh-case > div:nth-child(3),
+.fifth-content .wrappersubgrid-five > .eighth-case > div:nth-child(3) {
+  display: inline-block;
+  background-color: rgba(255, 68, 34, 0.06);
 }
 
 .story-title-source {
@@ -881,40 +850,6 @@ div.third-content .wrappersubgrid-three div.links ul > li > a:hover {
 .seventh-content .wrappersubgrid-seven article.seventh-case,
 .seventh-content .wrappersubgrid-seven article.eight-case {
   position: relative;
-}
-
-.seventh-content .wrappersubgrid-seven > .first-case > h3,
-.seventh-content .wrappersubgrid-seven > .second-case > h3,
-.seventh-content .wrappersubgrid-seven > .third-case > h3,
-.seventh-content .wrappersubgrid-seven > .fouth-case > h3,
-.seventh-content .wrappersubgrid-seven > .fifth-case > h3,
-.seventh-content .wrappersubgrid-seven > .sixth-case > h3,
-.seventh-content .wrappersubgrid-seven > .seventh-case > h3,
-.seventh-content .wrappersubgrid-seven > .eighth-case > h3 {
-  text-align: initial;
-}
-
-.seventh-content .wrappersubgrid-seven article.first-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.second-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.third-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.fourth-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.fifth-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.sixth-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.seventh-case > ul.autor-time > li:nth-child(2),
-.seventh-content .wrappersubgrid-seven article.eighth-case > ul.autor-time > li:nth-child(2) {
-  display: inline-block;
-  color: #555;
-}
-
-.seventh-content .wrappersubgrid-seven article.first-case > ul.autor-time > li:nth-child(1):hover,
-.seventh-content .wrappersubgrid-seven article.second-case > ul.autor-time > li:nth-child(1):hover,
-.seventh-content .wrappersubgrid-seven article.third-case > ul.autor-time > li:nth-child(1):hover,
-.seventh-content .wrappersubgrid-seven article.fourth-case > ul.autor-time > li:nth-child(1):hover,
-.seventh-content .wrappersubgrid-seven article.fifth-case > ul.autor-time > li:nth-child(1):hover,
-.seventh-content .wrappersubgrid-seven article.sixth-case > ul.autor-time > li:nth-child(1):hover,
-.seventh-content .wrappersubgrid-seven article.eight-case > ul.autor-time > li:nth-child(1):hover {
-  display: inline-block;
-  color: #aaa;
 }
 
 .seventh-content .wrappersubgrid-seven article.first-case > .dealarticle {
@@ -957,27 +892,9 @@ div.third-content .wrappersubgrid-three div.links ul > li > a:hover {
   }
 }
 
-.fifth-content .wrappersubgrid-five > .first-case > div > img,
-.fifth-content .wrappersubgrid-five > .second-case > div > img,
-.fifth-content .wrappersubgrid-five > .third-case > div > img,
-.fifth-content .wrappersubgrid-five > .fourth-case > div > img,
-.fifth-content .wrappersubgrid-five > .fifth-case > div > img,
-.fifth-content .wrappersubgrid-five > .sixth-case > div > img,
-.fifth-content .wrappersubgrid-five > .seventh-case > div > img,
-.fifth-content .wrappersubgrid-five > .eighth-case > div > img {
+.fifthcontent-principalimg {
   height: 301px;
   width: 401px;
-}
-
-.fifth-content .wrappersubgrid-five > .first-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .second-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .third-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .fourth-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .fifth-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .sixth-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .seventh-case > div > div.first-block > h2,
-.fifth-content .wrappersubgrid-five > .eighth-case > div > div.first-block > h2 {
-  margin-top: 0;
 }
 
 .fifth-content .wrappersubgrid-five > .first-case > div > div.first-block,
@@ -999,25 +916,11 @@ div.third-content .wrappersubgrid-three div.links ul > li > a:hover {
   display: inline-block;
 }
 
-.fifth-content .wrappersubgrid-five > .first-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .second-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .third-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .fourth-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .fifth-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .sixth-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .seventh-case > div > div.first-block,
-.fifth-content .wrappersubgrid-five > .eighth-case > div > div.first-block {
+.fifthcontent-sizefirstblock {
   width: 307px;
 }
 
-.fifth-content .wrappersubgrid-five .first-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .second-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .third-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .fourth-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .fifth-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .sixth-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .seventh-case div > div.second-block > img,
-.fifth-content .wrappersubgrid-five .eighth-case div > div.second-block > img {
+.fifthsecondblock-img {
   width: 90px;
   height: 80px;
 }
