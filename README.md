@@ -10,7 +10,7 @@ This project consists of replicating The Next Web, just the main page
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/sipe-daniel/the-next-web/21978af965aaf5a00ce91accffa7a550a61ae8a2/index.html)
+[Live Demo Link](https://rawcdn.githack.com/sipe-daniel/the-next-web/7d46c8e61dde23dadbea9f9893f0a953856536fc/index.html)
 
 ## Author
 
